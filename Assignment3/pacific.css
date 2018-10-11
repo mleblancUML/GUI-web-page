@@ -1,0 +1,98 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-image: linear-gradient(white, #00569F);
+	background-repeat: no-repeat;
+	min-width: 600px;
+	width: 80%;
+	margin: auto;
+	background-color: ;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+	margin: 3%;
+	overflow: hidden;
+	background: #91C8E3;
+}
+nav {
+	display: inline-block;
+	height: 100%;
+	width: 153px;
+	position: fixed;
+	/*width: 20%;*/
+	float: left;
+	margin: 0;
+}
+nav ul {
+	padding-left: 3%;
+	width: 153px;
+	list-style: none;
+	font-size: 1.2em;
+}
+nav a {
+	font-weight: bold;
+	color: #000032;
+	text-decoration: none;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	color: white;
+	margin: 0;
+	background: #000032;
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	padding-left: 5%;
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#content {
+	width: inherit;
+	display: flow-root;
+	background: white;
+	margin-left: 153px;
+}
+img {
+	float: left;
+	padding: 3%;
+}
+.resort {
+	font-weight: bold;
+	font-size: 120%;
+	color: #6488AA;
+}
+#content ul {
+	list-style-image: url("marker.gif");
+}
+#content ul li {
+	list-style-position: inside;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	width: 100%;
+	background: white;
+	margin-left: 153px;
+
+	display: inline-block;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", serif;
+}
