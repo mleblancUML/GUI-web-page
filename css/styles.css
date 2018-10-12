@@ -141,3 +141,11 @@ main {
   padding: 2%;
   margin: 0;
 }
+
+.contact-info a {
+  color: white;
+}
+
+.contact-info a:hover {
+  color: grey;
+}
