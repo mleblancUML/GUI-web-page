@@ -1,0 +1,9 @@
+.custom-background {
+  background-image: url("../images/background-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo-font {
+  font-family: 'Trirong', serif;
+}
