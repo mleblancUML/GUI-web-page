@@ -1,3 +1,10 @@
+<!-- Matthew LeBlanc: matthew_leblanc1@student.uml.edu -->
+<!-- Made this website using bootstrap 4 with a custom css file, and the js app -->
+<!-- Used a Google font -->
+<!-- Used the navbar that was on getbootstrap.com -->
+<!-- Background was found through a Google search. I couldn't find the image again when I went 
+     back to look for it on Google. -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +21,7 @@
   <!-- Navbar from getbootstrap.com with some adjustments -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Matt LeBlanc</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,7 +29,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link " href="../Assignment2/index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link " href="../index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../Assignment3/index.html">Assignment3</a>
@@ -38,7 +45,7 @@
       <p class="muted">
         This web application is a simple dynamic multiplication table.
         This table will be created using bootstrap and javascript. The
-        dimensions of the table will be made from your imput. So, below,
+        dimensions of the table will be made from your input. So, below,
         plese enter in the dimensions of the table.
       </p>
     </div>
@@ -46,30 +53,38 @@
 
   <!-- Form for getting input -->
   <div class="container">
-    <form>
+    <form id="user-input">
       <!-- Column Initial position -->
       <div class="form-group">
-        <label>Starting Column Dimesion</label>
-        <input id="cip" type="text" class="form-control" placeholder="1">
+        <label>Starting Column Dimension</label>
+        <input id="cip" type="text" class="form-control" placeholder="Enter Value">
       </div>
       <!-- Column Final position -->
       <div class="form-group">
         <label>Final Column Dimension</label>
-        <input id="cfp" type="text" class="form-control" placeholder="5">
+        <input id="cfp" type="text" class="form-control" placeholder="Enter Value">
       </div>
       <!-- Row Initial position -->
       <div class="form-group">
         <label>Starting Row Dimension</label>
-        <input id="rip" type="text" class="form-control" placeholder="1">
+        <input id="rip" type="text" class="form-control" placeholder="Enter Value">
       </div>
       <!-- Row Final position -->
       <div class="form-group">
         <label>Final Row Dimension</label>
-        <input id="rfp" type="text" class="form-control" placeholder="5">
+        <input id="rfp" type="text" class="form-control" placeholder="Enter Value">
       </dvi>
-      <!-- Submit button -->
-      <button id="submit" onclick="getUserInfo()" type="submit" class="btn btn-default btn-success">Submit</button>
     </div>
+  </form>
+  <div class="container">
+  <!-- Submit button -->
+    <button id="submit" onclick="getUserInfo()" type="submit" class="btn btn-default btn-success">Submit</button>
+  </div>
+
+  <br>
+  <!-- Create the table for the user input -->
+  <table class="table table-bordered mult-table" id="mul-table">
+  </table>
 
 <script src="js/assignment6.js"></script>
 </body>

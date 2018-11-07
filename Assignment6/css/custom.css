@@ -1,9 +1,12 @@
+/* Matthew LeBlanc: matthew_leblanc1@student.uml.edu */
+
+/* Code below just sets the image as the background. */
 .custom-background {
-  background-image: url("../images/background-3.jpg");
+  background-image: url("../images/background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* Setting font style */
 .jumbo-font {
   font-family: 'Trirong', serif;
 }
