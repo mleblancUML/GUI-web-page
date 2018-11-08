@@ -22,7 +22,11 @@ function getUserInfo() {
       window.alert('Error: Please make sure your total amount of values is less than 1000');
       // Have to do the same thing with this one.
       f.reset();
-    } else {
+    } else if(isNaN(sc.value) || isNaN(fc.value) || isNaN(sr.value) || isNaN(fr.value)) {
+        window.alert('Error, Please enter in a NUMBER, not a letter');
+        //reset the form.
+        f.reset();
+    }else {
       // Put the values into the array.
       var i;
       for (i = 0; i < f.length; i++) {
