@@ -54,7 +54,7 @@ body {
 /*Styling for the nav bar.*/
 .main-nav {
   margin-top: .5%;
-  color: #FFF;
+  color: white;
   float: left;
   width: 100%;
 }
@@ -132,11 +132,11 @@ main {
 /*Footer and contact info*/
 .contact-info {
   /*background info*/
-  background: black;
+  background: #09661C;
   /*position of footer*/
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #8F0223;
   font-family: "Courier New";
   padding: 2%;
   margin: 0;
