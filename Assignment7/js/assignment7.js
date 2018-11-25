@@ -67,22 +67,22 @@ $(function() {
         },
         messages: {
             cip: {
-                required: "Please make sure to enter a number",
-                number: "Please enter a number, you have entered something else.",
+                required: "<b>Please make sure to enter a number</b>",
+                number: "<b>Please enter a number, you have entered something else.</b>",
             },
             cfp: {
-                required: "Please make sure to enter a number",
-                number: "Please enter a number, you have entered something else.",
-                greaterThan: "Please make sure that this value is larger than the previous one."
+                required: "<b>Please make sure to enter a number</b>",
+                number: "<b>Please enter a number, you have entered something else.</b>",
+                greaterThan: "<b>Please make sure that this value is larger than the previous one.</b>"
             },
             rip: {
-                required: "Please make sure to enter a number",
-                number: "Please enter a number, you have entered something else.",
+                required: "<b>Please make sure to enter a number</b>",
+                number: "<b>Please enter a number, you have entered something else.</b>",
             },
             rfp: {
-                required: "Please make sure to enter a number",
-                number: "Please enter a number, you have entered something else.",
-                greaterThan: "Please make sure that this value is larger than the previous one."
+                required: "<b>Please make sure to enter a number</b>",
+                number: "<b>Please enter a number, you have entered something else.</b>",
+                greaterThan: "<b>Please make sure that this value is larger than the previous one.</b>"
             }
         }
     });
