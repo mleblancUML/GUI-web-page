@@ -1,4 +1,5 @@
-
+// Matthew LeBlanc
+// email: matthew_leblanc1@student.uml.edu
 
 $(function() {
     // Validator defaults, (get the error messages to stand out)
