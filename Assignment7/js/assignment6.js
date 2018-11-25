@@ -1,3 +1,6 @@
+// Matthew LeBlanc
+// email: matthew_leblanc1@student.uml.edu
+
 function getUserInfo() {
     var fDimension = [0, 0, 0, 0];
     var f;
