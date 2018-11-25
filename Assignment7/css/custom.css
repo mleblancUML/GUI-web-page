@@ -1,0 +1,14 @@
+.custom-background {
+  background-image: url("../images/background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo-font {
+  font-family: 'Trirong', serif;
+}
+
+.mult-table:first-child {
+  /*background-color: #87148A;*/
+
+}
