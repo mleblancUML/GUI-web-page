@@ -1,9 +1,10 @@
 // Matthew LeBlanc
 // email: matthew_leblanc1@student.uml.edu
 
-// This assingment is to add a slider and tab interface for our Dynamic
+// This assignment is to add a slider and tab interface for our Dynamic
 // multiplication table.
 $(function() {
+    // Got this code from the jQueryui.org and edited to fit what I needed.
     var tabTitle = $( "#tab_title" ),
       tabContent = $( "table" ),
       tabTemplate = "<li><a href='#{href}'>#{label}</a> <span class='ui-icon ui-icon-close' role='presentation'>Remove Tab</span></li>",
