@@ -63,14 +63,6 @@ $(function() {
         slide: function(event, ui) {
             handle1.text(ui.value);
             $("#cip").val(ui.value);
-            $("#ciSlider").click(function() {
-                if ($("#cip").valid()) {
-                    getUserInfo();
-                }
-                else {
-                    
-                }
-            });
             getUserInfo();
         },
         animate: true,
@@ -81,6 +73,11 @@ $(function() {
     });
     // This next thing needs to handle putting the slider values into the box
     $("#cip").val($("#ciSlider").slider("value"));
+    $("#cip").change(function() {
+        $("#ciSlider").slider("value", $(this).val());
+        handle1.text($(this).val());
+        getUserInfo();
+    });
 
 /*****************************************************************************/
 
@@ -102,6 +99,11 @@ $(function() {
         value: 5
     });
     $("#cfp").val($("#cfSlider").slider("value"));
+    $("#cfp").change(function() {
+        $("#cfSlider").slider("value", $(this).val());
+        handle2.text($(this).val());
+        getUserInfo();
+    });
 
 /******************************************************************************/
 
@@ -123,6 +125,11 @@ $(function() {
         value: 2
     });
     $("#rip").val($("#riSlider").slider("value"));
+    $("#rip").change(function() {
+        $("#riSlider").slider("value", $(this).val());
+        handle3.text($(this).val());
+        getUserInfo();
+    });
     
 /******************************************************************************/
 
@@ -144,6 +151,10 @@ $(function() {
         value: 8
     });
     $("#rfp").val($("#rfSlider").slider("value"));
-
+    $("#rfp").change(function() {
+        $("#rfSlider").slider("value", $(this).val());
+        handle4.text($(this).val());
+        getUserInfo();
+    });
     getUserInfo();
 });
