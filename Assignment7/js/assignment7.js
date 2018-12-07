@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 $(function() {
     // Validator defaults, (get the error messages to stand out)
     $.validator.setDefaults({
@@ -99,7 +96,6 @@ $(function() {
         }
     });
 });
-=======
 // Matthew LeBlanc
 // email: matthew_leblanc1@student.uml.edu
 
@@ -201,4 +197,3 @@ $(function() {
         }
     });
 });
->>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514
