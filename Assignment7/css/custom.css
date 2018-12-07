@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-.custom-background {
-  background-image: url("../images/background-1.png");
-=======
 /* Matthew LeBlanc
   email: matthew_leblanc1@student.uml.edu */
 .custom-background {
+  background-image: url("../images/background-1.png");
+
+.custom-background {
   background-image: url("../images/background-3.jpg");
->>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514
   background-repeat: no-repeat;
   background-size: cover;
 }
