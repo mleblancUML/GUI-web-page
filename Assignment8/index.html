@@ -1,0 +1,133 @@
+<!-- Matthew LeBlanc 
+     email: matthew_leblanc1@student.uml.edu -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Below is the link to the google font that I'm using. It has all relevant info on maker -->
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link href="jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Including the JQuery files -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"></script>
+    <!-- Need to include the JQuery UI library here-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Including the JQuery assignment code -->
+    <script src="js/assignment8.js"></script>
+    <script src="js/assignment7.js"></script>
+
+    <title>Dynamic Multiplication Table</title>
+  </head>
+  <body class="custom-background">
+
+    <!-- Navbar from getbootstrap.com with some adjustments -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Matt LeBlanc</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link " href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Assignment3/index.html">Assignment3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Assignment6/index.html">Assignment6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Assignment7/index.html">Assignment7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Assignment9/index.html">Assignment9</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- Jumbotron that will introduce webpage and info on app -->
+    <div class="jumbotron text-center jumbo-font">
+      <div class="container">
+        <h1 class="font-weight-bold">Welcome to the Dynamic Multiplication Table</h1>
+        <p class="muted">
+          This web application is a simple dynamic multiplication table.
+          This table will be created using bootstrap and javascript. The
+          dimensions of the table will be made from your input. So, below,
+          plese enter in the dimensions of the table. You can now save the tables you find!
+          To do so, please click the "Save Table" button down below. 
+          (Warning! You can only save up to 9 tables.)
+        </p>
+      </div>
+    </div>
+
+    <!-- Form for getting input -->
+    <div class="container">
+      <form id="user-input">
+        <!-- Column Initial position -->
+        <label>Starting Column Dimension</label>
+        <div class="form-group">
+            <input id="cip" name="cip" type="text" class="form-control" placeholder="Enter Value">
+        </div>
+        <!-- Column Initial Slider -->
+        <div class="container" id="ciSlider">
+          <div id="ciCustom-handle" class="ui-slider-handle"></div>
+        </div>
+        <!-- Column Final position -->
+        <label>Final Column Dimension</label>
+        <div class="form-group">
+          <input id="cfp" name="cfp" type="text" class="form-control" placeholder="Enter Value">
+        </div>
+        <!-- Column Final Slider -->
+        <div id="cfSlider">
+          <div id="cfCustom-handle" class="ui-slider-handle"></div>
+        </div>
+        <!-- Row Initial position -->
+        <label>Starting Row Dimension</label>
+        <div class="form-group">
+          <input id="rip" name="rip" type="text" class="form-control" placeholder="Enter Value">
+        </div>
+        <!-- Row Inital Slider -->
+        <div id="riSlider">
+          <div id="riCustom-handle" class="ui-slider-handle"></div>
+        </div>
+        <!-- Row Final position -->
+        <label>Final Row Dimension</label>
+        <div class="form-group">
+          <input id="rfp" name="rfp" type="text" class="form-control" placeholder="Enter Value">
+        </div>
+        <!-- Row Final Slider -->
+        <div id="rfSlider">
+          <div id="rfCustom-handle" class="ui-slider-handle"></div>
+        </div>
+      </div>
+    </form>
+    <br>
+    <div class="container">
+      <!-- Submit button -->
+      <!--<button id="submit" onclick="getUserInfo()" type="submit" class="btn btn-default btn-success">Submit</button>-->
+      
+    </div>
+    <br>
+    <!-- Create the table for the user input -->
+    <table class="table table-bordered mult-table" id="mul-table"></table>
+
+    <!-- This is where the save button will be placed. Will add a tab with current table in it. -->
+
+    <button id="save" type="button" class="btn btn-default btn-success">Save Table</button>
+
+    <!-- This is where the tab interface will be placed. -->
+
+    <div id="tabs"><ul></ul></div>
+
+    <!-- Including the regular js file -->
+    <script src="js/assignment6.js"></script>
+  </body>
+</html>

@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+=======
+/* Matthew LeBlanc: matthew_leblanc1@student.uml.edu */
+
+/* Code below just sets the image as the background. */
+>>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514
 .custom-background {
   background-image: url("../images/background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
 
 .jumbo-font {
   font-family: 'Trirong', serif;
@@ -12,3 +19,9 @@
   /*background-color: #87148A;*/
 
 }
+=======
+/* Setting font style */
+.jumbo-font {
+  font-family: 'Trirong', serif;
+}
+>>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// Matthew LeBlanc: matthew_leblanc1@student.uml.edu
+
+>>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514
 function getUserInfo() {
     var fDimension = [0, 0, 0, 0];
     var f;
@@ -20,7 +25,15 @@ function getUserInfo() {
       window.alert('Error: Please make sure your total amount of values is less than 1000');
       // Have to do the same thing with this one.
       f.reset();
+<<<<<<< HEAD
     } else {
+=======
+    } else if(isNaN(sc.value) || isNaN(fc.value) || isNaN(sr.value) || isNaN(fr.value)) {
+        window.alert('Error, Please enter in a NUMBER, not a letter');
+        //reset the form.
+        f.reset();
+    }else {
+>>>>>>> 42961b5ac90d394dd212bdf9610fd03a1594b514
       // Put the values into the array.
       var i;
       for (i = 0; i < f.length; i++) {
