@@ -1,0 +1,22 @@
+.custom-background {
+    background-image: url("../images/wood-table-background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*** Images from following sources: ***
+https://designbundles.net/skyladesign/39786-happy-holidays-svg-hand-lettered-quote
+http://backgroundcheckall.com/wood-table-background-2/
+***                                 ***/
+
+.navbar {
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url("../images/jtbackground2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+}
