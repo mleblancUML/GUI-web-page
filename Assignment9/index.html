@@ -13,19 +13,17 @@
         <!-- INCLUDING CSS FILES HERE -->
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/custom.css" />
-        <!-- JQUERY CSS FILES HERE -->
-        <link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/smoothness/jquery-ui.css">
-        <!-- BOOTSTRAP HERE -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/smoothness/jquery-ui.css" />
         <!-- INCLUDING JQUERY HERE -->
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
+        <!-- INCLUDING BOOTSTRAP HERE-->
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"></script>
         <!-- INCLUDING JSON FILE HERE -->
         <script type="text/javascript" src="js/pieces.json"></script>
         <!-- PRELOADING THE RANDOMIZE_SCRIBBLE.JS FILE HERE -->
         <script src="js/randomize_scribble.js"></script>
-        <title>My Scrabble</title>
+        <title>Scribble</title>
     </head>
     <body class="custom-background">
 
@@ -72,18 +70,63 @@
         </div>
 
         <!-- CREATE THE AREA WHERE WE WILL DROP THE TILES -->
-        <img src="images/Scrabble-Tile-Rack.jpg">
-        <div class="container">
-            <!-- Source for tile board -->
+        <div id="container containmentWrapper">
+
+            <!-- Making the Scribble Board -->
+            <div class="justify-content-around" id="board">
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <br>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <br>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <br>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <br>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <br>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+                <div id="snaptarget" class=" ui-widget-header"></div>
+            </div>
+            <br>
+            <br>
+            <img id="tileRack" src="images/Scrabble-Tile-Rack.jpg" alt="Scrabble Tile Rack">
+            <!-- Source for tile rack -->
             <!-- http://forum.arcanewonders.com/index.php?topic=14272.0 -->
-            
-            <div id="snaptarget" class=" ui-widget-header"></div>
-            <div id="snaptarget" class=" ui-widget-header"></div>
+
         </div>
         
 
         <!-- CREATE A DRAGGABLE OBJECT HERE -->
-        <div id="draggable" class="ui-weidget-content">
+        <div id="draggable" class="draggable ui-widget-content">
             <img id="tile">
         </div>
 

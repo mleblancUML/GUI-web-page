@@ -25,15 +25,37 @@ http://backgroundcheckall.com/wood-table-background-2/
 
 /**** This will be css for tiles and the grid in which
       We will add the grid as well. *******************/
-#snaptarget {
+#containmentWrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+#board {
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
     display: inline-block;
-    margin: 0;
+}
+
+#tileRack {
+    margin: auto;
+    display: block;
+}
+
+#snaptarget {
+    /*position: absolute;*/
+    display: inline-block;
+    position: relative;
+    margin: auto;
     color: white;
     background-color: black;
-    border-color: white;
-    border-width: 5px;
     height: 100px;
     width: 100px;
+}
+
+#draggable {
+    height: fit-content;
+    width: fit-content;
 }
 
 #tile {
