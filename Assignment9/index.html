@@ -22,7 +22,9 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"></script>
         <!-- INCLUDING JSON FILE HERE -->
-        <!--<script src="pieces.json"></script>-->
+        <script type="text/javascript" src="js/pieces.json"></script>
+        <!-- PRELOADING THE RANDOMIZE_SCRIBBLE.JS FILE HERE -->
+        <script src="js/randomize_scribble.js"></script>
         <title>My Scrabble</title>
     </head>
     <body class="custom-background">
@@ -69,6 +71,23 @@
             </div>
         </div>
 
+        <!-- CREATE THE AREA WHERE WE WILL DROP THE TILES -->
+        <img src="images/Scrabble-Tile-Rack.jpg">
+        <div class="container">
+            <!-- Source for tile board -->
+            <!-- http://forum.arcanewonders.com/index.php?topic=14272.0 -->
+            
+            <div id="snaptarget" class=" ui-widget-header"></div>
+            <div id="snaptarget" class=" ui-widget-header"></div>
+        </div>
+        
+
+        <!-- CREATE A DRAGGABLE OBJECT HERE -->
+        <div id="draggable" class="ui-weidget-content">
+            <img id="tile">
+        </div>
+
+        <!-- LOADING THE JS FILES HERE -->
         <script src="js/assignment9.js"></script>
     </body>
 </html>
