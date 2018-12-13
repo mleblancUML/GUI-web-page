@@ -70,77 +70,33 @@
         </div>
 
         <!-- CREATE THE AREA WHERE WE WILL DROP THE TILES -->
-        <div id="container containmentWrapper">
+        <div class="container" id="containmentWrapper">
 
             <!-- Making the Scribble Board -->
-            <div class="justify-content-around" id="board">
-                <!--<div id="snaptarget" class=" ui-widget-header">
-                    <img id="boardPiece_empty">
-                </div>
-                <div id="snaptarget" class=" ui-widget-header">
-                    <img id="boardPiece_empty">
-                </div>
-                <div id="snaptarget" class=" ui-widget-header">
-                   <img id="boardPiece_empty">
-                </div>
-                <div id="snaptarget" class=" ui-widget-header">
-                    <img id="boardPiece_empty">
-                </div>
-                <div id="snaptarget" class=" ui-widget-header">
-                    <img id="boardPiece_empty">
-                </div>
-                <div id="snaptarget" class=" ui-widget-header">
-                    <img id="boardPiece_empty">
-                </div>
-                <br>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <br>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <br>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <br>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <br>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div>
-                <div id="snaptarget" class=" ui-widget-header"></div> -->
-            </div>
+            <div class="justify-content-around" id="board"></div>
             <br>
             <br>
             <img id="tileRack" src="images/Scrabble-Tile-Rack.jpg" alt="Scrabble Tile Rack">
             <!-- Source for tile rack -->
             <!-- http://forum.arcanewonders.com/index.php?topic=14272.0 -->
             <!-- CREATE A DRAGGABLE OBJECT HERE -->
-            <div id="draggable" class="draggable ui-widget-content">
-                <img id="tile">
+            <div id="startTiles">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+                    <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
             </div>
-            <div class="container">
-                <button class="btn btn-success">Submit</button>
-            </div>
+            <img id="tile" class="drag" src="images/Scrabble_Tile_A.jpg">
+            <br>
             
+        </div>
+        <div class="container" id="buttons">
+            <button class="btn btn-success btn-lg" id="Submit"><sr>Submit</sr></button>
+            <button class="btn btn-info btn-lg" id="NewTiles" onclick="generateInitTiles()"><sr>Get New Tiles</sr></button>
+            <button class="tn btn-danger btn-lg" id="Reset">Reset Board</button>
         </div>
 
         <!-- LOADING THE JS FILES HERE -->

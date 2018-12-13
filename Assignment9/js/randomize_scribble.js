@@ -3,9 +3,9 @@
 // email: matthewmleblanc@gmail.com
 console.log("Loading Tiles");
 // Set the img with proper tile
-$("#tile").ready(function() {
+/*$("#tile").ready(function() {
     $("#tile").attr("src", "images/Scrabble_Tile_" + randGenChar() + '.jpg');
-});
+}); ***** Might not need this because of javascript code. ******/ 
 
 console.log("Loading Board");
 // Set the img with board tile

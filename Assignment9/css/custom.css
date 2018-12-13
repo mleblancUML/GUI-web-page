@@ -31,9 +31,8 @@ http://backgroundcheckall.com/wood-table-background-2/
 }
 /**** CSS for the board *******************************/
 #board {
-    margin-left: 28%;
     margin-right: auto;
-    align-items: center;
+    margin-left: 20%;
     justify-content: space-around;
     display: block;
 }
@@ -43,8 +42,21 @@ http://backgroundcheckall.com/wood-table-background-2/
 }
 
 #tileRack {
+    position: relative;
+    text-align: center;
     margin: auto;
     display: block;
+    height: initial;
+    width: 800px;
+}
+
+#startTiles {
+    position: absolute;
+    top: 115%;
+    left: 31%;
+    right: auto;
+    display: inline-block;
+    align-content: center;
 }
 
 #snaptarget {
@@ -58,6 +70,11 @@ http://backgroundcheckall.com/wood-table-background-2/
     width: 100px;
 }
 
+img {
+    height: 100px;
+    width: 100px;
+}
+
 #draggable {
     height: fit-content;
     width: fit-content;
@@ -66,4 +83,10 @@ http://backgroundcheckall.com/wood-table-background-2/
 #tile {
     width: 100px;
     height: 100px;
+}
+
+#buttons {
+    display: inline-block;
+    margin-left: 42%; 
+    margin-bottom: 5%;
 }
