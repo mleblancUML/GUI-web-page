@@ -22,36 +22,11 @@
 
     <title>Dynamic Multiplication Table</title>
   </head>
-  <body class="custom-background">
+  <body class="custom-background" onload="initNav()">
 
     <!-- Navbar from getbootstrap.com with some adjustments -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Matt LeBlanc</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link " href="../index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Assignment3/index.html">Assignment3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Assignment6/index.html">Assignment6</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Assignment7/index.html">Assignment7</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Assignment9/index.html">Assignment9</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNav"></nav>
 
     <!-- Jumbotron that will introduce webpage and info on app -->
     <div class="jumbotron text-center jumbo-font">
@@ -128,6 +103,7 @@
     <div id="tabs"><ul></ul></div>
 
     <!-- Including the regular js file -->
+    <script src="../js/nav-bar.js"></script>
     <script src="js/assignment6.js"></script>
   </body>
 </html>

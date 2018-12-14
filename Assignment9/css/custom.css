@@ -80,7 +80,7 @@ img {
     width: fit-content;
 }
 
-#tile {
+.tile {
     width: 100px;
     height: 100px;
 }

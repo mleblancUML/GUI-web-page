@@ -1,18 +1,6 @@
 // Javascript for Assignment 9
 // By: Matthew LeBlanc
 // email: matthewmleblanc@gmail.com
-$( function() {
-    $(".drag").draggable({ 
-        snap: ".ui-widget-header",
-        containment: "#window", 
-        scroll: "false"
-    });
-    $("#snapTarget").droppable( { drop: function( event, ui) {
-        console.log("Target Dropped");
-    }});
-    generateInitTiles();
-    generateBoard();
-});
 
 // Adding function to generate board
 function generateBoard() {
@@ -39,24 +27,12 @@ function generateBoard() {
     Board.innerHTML = board;
 }
 
-// Function to generate the 7 tiles that the player starts with
-function generateInitTiles() {
-    console.log("Creating initial tiles");
-    // Create the variables
-    var i;
-    var tileImage = '<img id="tile" class="drag ui-draggable" src="images/Scrabble_Tile_';
-    var tiles = "";
-    var tileInit = document.getElementById("startTiles");
-    // Make a loop to generate the tile code
-    for (i = 0; i < 7; i++) {
-        tiles += tileImage + randGenChar() + '.jpg">';
-        
-    }
-    tileInit.innerHTML = tiles;
-    
+// Replace tiles with different letters
+function replaceTiles() {
     
 }
 
+// Function to generate a random character
 function randGenChar () {
     console.log("Generating Random Char");
     var character = "";

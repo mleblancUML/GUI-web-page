@@ -20,7 +20,7 @@ function initNav() {
         console.log(Assignments[i]);
         // Adding LI elements
         var elLi = '<li class="nav-item active"> \n <a class="nav-link" href="../';
-        elLi += Assignments[i] + '.index.html" ></a></li>';
+        elLi += Assignments[i] + '/index.html" >' + Assignments[i] + '</a></li>';
         nav += elLi;
     }
     nav += '</ul></div>';
