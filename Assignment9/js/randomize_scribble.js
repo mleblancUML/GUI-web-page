@@ -5,11 +5,12 @@
 // Define global variable Score
 var Score;
 
-
 // Define the tile generator 
 
 $( function() {
     // Define drag class that allows for things to be dragged.
+    replaceTiles();
+    generateBoard();
     $(".drag").draggable({ 
         snap: ".ui-widget-header",
         containment: "document", 
@@ -17,14 +18,15 @@ $( function() {
     });
     // Attempting to define the droppable target.
     $(".snapTarget").droppable( { 
-        accept: ".drag",
-        drop: function( event, ui) {
+        drop: function( event, ui ) {
             // Testing dropping functionality
-            $(this).append(ui.draggable);
+            console.log("Dropped");
+            var i;
+            var droppedObject = $(".drag").val();
+            console.log(droppedObject.class);
         }
     });
-    replaceTiles();
-    generateBoard();
+    
 });
 
 console.log("Loading Board");
