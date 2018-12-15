@@ -20,7 +20,9 @@
         <!-- INCLUDING BOOTSTRAP HERE-->
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"></script>
         <!-- INCLUDING JSON FILE HERE -->
-        <script type="text/javascript" src="js/pieces.json"></script>
+        <!-- TESTING FIRST WITH JUST A JS OBJECT LIKE DICTIONARY -->
+        <script src="js/Board_Pieces.js"></script>
+        <!--<script type="text/javascript" src="js/pieces.json"></script>-->
         <!-- PRELOADING THE RANDOMIZE_SCRIBBLE.JS FILE HERE -->
         <script src="js/randomize_scribble.js"></script>
         <title>Scribble</title>
@@ -68,9 +70,9 @@
             
         </div>
         <div class="container" id="buttons">
-            <button class="btn btn-success btn-lg" id="Submit"><sr>Submit</sr></button>
-            <button class="btn btn-info btn-lg" id="NewTiles"><sr>Get New Tiles</sr></button>
-            <button class="tn btn-danger btn-lg" id="Reset">Reset Board</button>
+            <button class="btn btn-success btn-lg" id="Submit" onclick="Submit()"><sr>Submit</sr></button>
+            <button class="btn btn-info btn-lg" id="NewTiles" onclick="replaceTiles()"><sr>Get New Tiles</sr></button>
+            <button class="tn btn-danger btn-lg" id="Reset" onclick="Reset()">Reset Board</button>
         </div>
 
         <!-- LOADING THE JS FILES HERE -->

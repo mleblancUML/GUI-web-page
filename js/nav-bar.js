@@ -17,7 +17,6 @@ function initNav() {
     var Assignments = ['Assignment3', 'Assignment6', 'Assignment7', 'Assignment8', 'Assignment9'];
     var i;
     for (i = 0; Assignments[i] != null; i++) {
-        console.log(Assignments[i]);
         // Adding LI elements
         var elLi = '<li class="nav-item active"> \n <a class="nav-link" href="../';
         elLi += Assignments[i] + '/index.html" >' + Assignments[i] + '</a></li>';

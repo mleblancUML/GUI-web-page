@@ -59,7 +59,7 @@ http://backgroundcheckall.com/wood-table-background-2/
     align-content: center;
 }
 
-#snaptarget {
+.snapTarget {
     /*position: absolute;*/
     display: inline-block;
     position: relative;
