@@ -45,7 +45,7 @@ http://backgroundcheckall.com/wood-table-background-2/
     position: relative;
     text-align: center;
     margin: auto;
-    display: block;
+    display: flex;
     height: initial;
     width: 800px;
 }
@@ -86,7 +86,25 @@ img {
 }
 
 #buttons {
-    display: inline-block;
-    margin-left: 42%; 
+    display: flex; 
     margin-bottom: 5%;
+}
+
+#Submit {
+    margin-left: auto;
+    margin-right: 1%;
+}
+#Reset {
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+#ScoreBoard {
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    color: white;
+    background: none;
 }

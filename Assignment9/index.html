@@ -25,7 +25,7 @@
         <!--<script type="text/javascript" src="js/pieces.json"></script>-->
         <!-- PRELOADING THE RANDOMIZE_SCRIBBLE.JS FILE HERE -->
         <script src="js/randomize_scribble.js"></script>
-        <title>Scribble</title>
+        <title>Matt's Scrabble Game!</title>
     </head>
     <body class="custom-background" onload="initNav()">
 
@@ -37,7 +37,7 @@
 
         <div class="jumbotron text-center jumbo-font">
             <div class="container">
-                <h1 class="font-weight-bold">Welcome to my personalized Scribble Game!</h1>
+                <h1 class="font-weight-bold">Welcome to my personalized Scrabble Game!</h1>
                 <p class="muted">
                     This is a web application from yours truly just in time for the Holiday season! 
                     I hope you enjoy the game! This little project was brought to you by javascript,
@@ -50,86 +50,32 @@
         <div class="container" id="containmentWrapper">
 
             <!-- Making the Scribble Board -->
-            <div class="justify-content-around" id="board">
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <div class="snapTarget ui-widget-header"></div>
-                <br>
-            </div>
+            <div class="justify-content-around" id="board"></div>
             <br>
             <br>
             <img id="tileRack" src="images/Scrabble-Tile-Rack.jpg" alt="Scrabble Tile Rack">
             <!-- Source for tile rack -->
             <!-- http://forum.arcanewonders.com/index.php?topic=14272.0 -->
             <!-- CREATE A DRAGGABLE OBJECT HERE -->
-            <div id="startTiles">
-                <img class="drag tile">
-                <img class="drag tile">
-                <img class="drag tile">
-                <img class="drag tile">
-                <img class="drag tile">
-                <img class="drag tile">
-                <img class="drag tile">
-            </div>
+            <div id="startTiles"></div>
             <br>
             
         </div>
-        <div class="container" id="buttons">
-            <button class="btn btn-success btn-lg" id="Submit" onclick="Submit()"><sr>Submit</sr></button>
-            <button class="btn btn-info btn-lg" id="NewTiles" onclick="replaceTiles()"><sr>Get New Tiles</sr></button>
+        <!-- BUTTON CONTAINER -->
+        <div id="buttons">
+            <button class="btn btn-success btn-lg" id="Submit" onclick="Submit()">Submit</button>
+            <button class="btn btn-info btn-lg" id="NewTiles" onclick="replaceTiles()">Get New Tiles</button>
             <button class="tn btn-danger btn-lg" id="Reset" onclick="Reset()">Reset Board</button>
+        </div>
+
+        <!-- SCORE BOARD (USING CARD FROM BS4) -->
+        <div class="container" id="ScoreBoard">
+            <div class="card">
+                <div class="card-body">
+                    <h1><strong>High Scores</strong></h1>
+                    <ol id="highScoreList"></ol>
+                </div>
+            </div>
         </div>
 
         <!-- LOADING THE JS FILES HERE -->

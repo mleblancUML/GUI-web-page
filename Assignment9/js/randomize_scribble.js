@@ -3,44 +3,24 @@
 // email: matthewmleblanc@gmail.com
 
 // Define global variable Score
-var Score;
-
+var Score = 0;
+var Player = 0;
 // Define the tile generator 
 
 $( function() {
-    // Define drag class that allows for things to be dragged.
+    var DWS = 0;
+    console.log("Generating Tiles");
     replaceTiles();
+    // Show score and update it when needed
+    $("#highScoreList").append('<li></li>');
+    $("#highScoreList li").addClass("Score" + Player);
+    console.log("Loading Board");
     generateBoard();
+
     $(".drag").draggable({ 
         snap: ".ui-widget-header",
         containment: "document", 
         scroll: "false"
     });
-    // Attempting to define the droppable target.
-    $(".snapTarget").droppable( { 
-        drop: function( event, ui ) {
-            // Testing dropping functionality
-            console.log("Dropped");
-            var i;
-            var droppedObject = $(".drag").val();
-            console.log(droppedObject.class);
-        }
-    });
-    
 });
 
-console.log("Loading Board");
-// Set the img with board tile
-$("#boardPiece_empty").each(function() {
-    $(this).attr("src", "images/Empty_Board_Tile.png");
-});
-
-function getTile($item) {
-   var i = 0;
-   for (i; i < boardPieces.length; i++) {
-       if (boardPieces[i] == $item) {
-           console.log(boardPieces[i]);
-       }
-   }
-}
-console.log(boardPieces[0]);
