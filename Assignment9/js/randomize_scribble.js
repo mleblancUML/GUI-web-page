@@ -10,10 +10,11 @@ var Player = 0;
 $( function() {
     var DWS = 0;
     console.log("Generating Tiles");
-    replaceTiles();
+    getTiles();
     // Show score and update it when needed
     $("#highScoreList").append('<li></li>');
     $("#highScoreList li").addClass("Score" + Player);
+    $("#highScoreList li").text(Score);
     console.log("Loading Board");
     generateBoard();
 
