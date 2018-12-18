@@ -88,8 +88,6 @@ function generateBoard() {
     });
 }
 
-// Replace tiles with different letters
-
 function getTiles() {
     // Making Variables.
     var i;
@@ -149,20 +147,16 @@ function Reset() {
     });
     // Reset Score
     Score = 0;
+    $("#highScoreList").find(CurrentPlayer).text(Score);
     // Reset dws
     dws = 0;
-    // Reset High Scores
-    $("#highScoreList li").each(function() {
-        $(this).remove();
-    });
-    $("#highScoreList").append('<li class="Score' + Player + '">');
 }
 
 // Calculate score used in randomize_scribble.js
 function Submit() {
     // First we should make sure that the word they used is a word.
     // Check the UserString agains the dictionary
-    var xhttp = new XMLHttpRequest();
+    /*var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "words_alpha.txt", true);
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 0) {
@@ -170,12 +164,12 @@ function Submit() {
         }
     };
     
-    xhttp.send(null);
+    xhttp.send(null);*/
 
     // When you want to enter in your final score
     Player++;
     var nextScore = 'Score' + Player;
-    $("#highScoreList").append('<li class="Score' + nextScore + '">');
+    $("#highScoreList").append('<li class="' + nextScore + '">');
     CurrentPlayer = '.' + nextScore;
     Score = 0;
     dws = 0;

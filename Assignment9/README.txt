@@ -17,4 +17,7 @@ Bugs:
     drop the tiles wherever you please, but the tiles don't have to be together in
     order for your score to be calculated. Also, if you make a mistake, and put a 
     tile in the wrong place, and you then move it again it is added to your score 
-    again.  
+    again. Although the remedy to this is just resetting the board with the reset
+    board button that just puts everything back to where it was intially. You are
+    unable to check whether the word is valid or not, but I think I hit all the base
+    requirements.
