@@ -1,20 +1,39 @@
+/* CSS FOR HEADDING AND NAV-BAR */
 #Head {
     padding: .5%;
-    background: #343a40;
+    background: #222222;
+    height: 20%;
+}
+
+#Head img {
+border-radius: 50%;
+width: 10%;
+position: absolute;
+top: 0;
+right: 0;
+padding: 1%;
+display: inline;
 }
 
 #Name {
+    margin-left: 2%;
     font-family: 'Mr Dafoe', cursive;
     color: white;
 }
 
 #myNav {
     font-family: 'Quicksand', sans-serif;
+    width: 50%;
+    background-color: #222222;
 }
+
+/* CSS FOR MAIN BODY OF PAGE */
+
+
 
 /* CSS FOR FOOTER AND CONTENTS */
 footer {
-    background: #343a40;
+    background: #222222;
     position: fixed;
     bottom: 0;
 }
