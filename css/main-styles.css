@@ -1,0 +1,38 @@
+#Head {
+    padding: .5%;
+    background: #343a40;
+}
+
+#Name {
+    font-family: 'Mr Dafoe', cursive;
+    color: white;
+}
+
+#myNav {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* CSS FOR FOOTER AND CONTENTS */
+footer {
+    background: #343a40;
+    position: fixed;
+    bottom: 0;
+}
+
+.contact-info {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    padding: .5%;
+    margin: 0;
+  }
+  
+  .contact-info a {
+    color: white;
+  }
+  
+  .contact-info a:hover {
+    color: grey;
+  }
+  
