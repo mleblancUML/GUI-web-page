@@ -2,34 +2,44 @@
 #Head {
     padding: .5%;
     background: #222222;
-    height: 20%;
+    overflow: hidden;
+    position: relative;
 }
 
-#Head img {
-border-radius: 50%;
-width: 10%;
-position: absolute;
-top: 0;
-right: 0;
-padding: 1%;
-display: inline;
+#nameAndImage {
+    height: fit-content;
 }
 
 #Name {
     margin-left: 2%;
     font-family: 'Mr Dafoe', cursive;
     color: white;
+    margin-bottom: 0;
 }
 
 #myNav {
     font-family: 'Quicksand', sans-serif;
-    width: 50%;
+    font-size: larger;
+    width: 100%;
     background-color: #222222;
+    padding: 1.5%;
+}
+
+#meImg {
+    border-radius: 50%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1%;
+    display: inline;
 }
 
 /* CSS FOR MAIN BODY OF PAGE */
 
-
+#mainJumboTron {
+    background-image: url("images/");
+}
 
 /* CSS FOR FOOTER AND CONTENTS */
 footer {
