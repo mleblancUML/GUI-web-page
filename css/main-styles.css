@@ -1,7 +1,14 @@
+body{
+    background-image: url("../images/20181102_105955.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* CSS FOR HEADDING AND NAV-BAR */
 #Head {
-    padding: .5%;
+    padding: 1%;
     background: #222222;
+    opacity: 0.9;
     overflow: hidden;
     position: relative;
 }
@@ -22,6 +29,7 @@
     font-size: larger;
     width: 100%;
     background-color: #222222;
+    opacity: 0.9;
     padding: 1.5%;
 }
 
@@ -38,7 +46,10 @@
 /* CSS FOR MAIN BODY OF PAGE */
 
 #mainJumboTron {
-    background-image: url("images/20181102_105955.jpg");
+    margin-top: 2%;
+    color: white;
+    background-color: #888888;
+    opacity: 0.9;
 }
 
 /* CSS FOR FOOTER AND CONTENTS */
