@@ -1,0 +1,110 @@
+.custom-background {
+    background-image: url("../images/wood-table-background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+
+    overflow-x: hidden;
+}
+
+/*** Images from following sources: ***
+https://designbundles.net/skyladesign/39786-happy-holidays-svg-hand-lettered-quote
+http://backgroundcheckall.com/wood-table-background-2/
+***                                 ***/
+
+.navbar {
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url("../images/jtbackground2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+}
+
+/**** This will be css for tiles and the grid in which
+      We will add the grid as well. *******************/
+#containmentWrapper {
+    height: 100vh;
+    width: 100vw;
+}
+/**** CSS for the board *******************************/
+#board {
+    margin-right: auto;
+    margin-left: 20%;
+    justify-content: space-around;
+    display: block;
+}
+#boardPiece_empty {
+    width: 100px;
+    height: 100px;
+}
+
+#tileRack {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    height: initial;
+    width: 800px;
+}
+
+#startTiles {
+    position: absolute;
+    top: 115%;
+    left: 31%;
+    right: auto;
+    display: inline-block;
+    align-content: center;
+}
+
+.snapTarget {
+    /*position: absolute;*/
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    color: white;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#draggable {
+    height: fit-content;
+    width: fit-content;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+}
+
+#buttons {
+    display: flex; 
+    margin-bottom: 5%;
+}
+
+#Submit {
+    margin-left: auto;
+    margin-right: 1%;
+}
+#Reset {
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+#ScoreBoard {
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    color: white;
+    background: none;
+}

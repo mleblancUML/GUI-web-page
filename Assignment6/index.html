@@ -1,0 +1,78 @@
+<!-- Matthew LeBlanc: matthew_leblanc1@student.uml.edu -->
+<!-- Made this website using bootstrap 4 with a custom css file, and the js app -->
+<!-- Used a Google font -->
+<!-- Used the navbar that was on getbootstrap.com -->
+<!-- Background was found through a Google search. I couldn't find the image again when I went 
+     back to look for it on Google. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Below is the link to the google font that I'm using. It has all relevant info on maker -->
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+    
+  <title>Dynamic Multiplication Table</title>
+</head>
+<body class="custom-background" onload="initNav()">
+     
+  <!-- Navbar from getbootstrap.com with some adjustments -->
+     
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNav"></nav>
+
+  <!-- Jumbotron that will introduce webpage and info on app -->
+  <div class="jumbotron text-center jumbo-font">
+    <div class="container">
+      <h1 class="font-weight-bold">Welcome to the Dynamic Multiplication Table</h1>
+      <p class="muted">
+        This web application is a simple dynamic multiplication table.
+        This table will be created using bootstrap and javascript. The
+        dimensions of the table will be made from your input. So, below,
+        plese enter in the dimensions of the table.
+      </p>
+    </div>
+  </div>
+
+  <!-- Form for getting input -->
+  <div class="container">
+    <form id="user-input">
+      <!-- Column Initial position -->
+      <div class="form-group">
+        <label>Starting Column Dimension</label>
+        <input id="cip" type="text" class="form-control" placeholder="Enter Value">
+      </div>
+      <!-- Column Final position -->
+      <div class="form-group">
+        <label>Final Column Dimension</label>
+        <input id="cfp" type="text" class="form-control" placeholder="Enter Value">
+      </div>
+      <!-- Row Initial position -->
+      <div class="form-group">
+        <label>Starting Row Dimension</label>
+        <input id="rip" type="text" class="form-control" placeholder="Enter Value">
+      </div>
+      <!-- Row Final position -->
+      <div class="form-group">
+        <label>Final Row Dimension</label>
+        <input id="rfp" type="text" class="form-control" placeholder="Enter Value">
+      </dvi>
+      </div>
+    </div>
+  </form>
+  <div class="container">
+  <!-- Submit button -->
+    <button id="submit" onclick="getUserInfo()" type="submit" class="btn btn-default btn-success">Submit</button>
+  </div>
+
+  <br>
+  <!-- Create the table for the user input -->
+  <table class="table table-bordered mult-table" id="mul-table">
+  </table>
+<!-- LOADING JS FILE HERE -->
+<script src="../js/nav-bar.js"></script>
+<script src="js/assignment6.js"></script>
+</body>
+</html>
