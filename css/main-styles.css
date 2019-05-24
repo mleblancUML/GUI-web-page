@@ -36,32 +36,44 @@
 }
 
 /* CSS FOR MAIN BODY OF PAGE */
+/* SOURCE FOR GIF: https://gifer.com/en/OtSC */
 
 #mainJumboTron {
-    background-image: url("images/");
+    background-image: url("../images/snowinggif.gif");
+    color: white;
+}
+
+#card-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container {
+    padding: 2%;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 250px;
 }
 
 /* CSS FOR FOOTER AND CONTENTS */
-footer {
-    background: #222222;
-    position: fixed;
-    bottom: 0;
-}
 
 .contact-info {
+    position: relative;
+    background-color: #222222;
     font-family: 'Quicksand', sans-serif;
     color: white;
     bottom: 0;
     width: 100%;
     padding: .5%;
     margin: 0;
-  }
+}
   
-  .contact-info a {
+.contact-info a {
     color: white;
-  }
+}
   
-  .contact-info a:hover {
+.contact-info a:hover {
     color: grey;
-  }
-  
+}
