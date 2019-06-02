@@ -52,6 +52,23 @@ body{
     opacity: 0.9;
 }
 
+.resume {
+    border: white;
+    border-style: solid;
+    background-color: #888888;
+    padding: 0.5%;
+    color: white;
+}
+
+.resume a:hover {
+    color: white;
+    background-color: #333333;
+}
+
+.resume a {
+    color: white;
+}
+
 /* CSS FOR FOOTER AND CONTENTS */
 footer {
     background: #222222;
