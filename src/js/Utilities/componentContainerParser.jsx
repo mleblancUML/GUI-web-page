@@ -1,14 +1,13 @@
 import React from 'react';
 
-import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
-import parseJsonObjectToComponentItem from './parseJsonObjectToComponentItem.jsx';
+import { getRandomKeyValue } from './getRandomKeyValue.js';
+import componentItemParser from './componentItemParser.jsx';
 
-
-function parseJsonObjectToComponentContainers(componentContainer, componentContents) {
+function componentContainerParser(componentContainer, componentContents) {
     var contents = null;
     if(componentContainer.containerContents) {
         contents = componentContainer.containerContents.map((container) => {
-            return parseJsonObjectToComponentContainers(container, componentContents);
+            return componentContainerParser(container, componentContents);
         });
     }
     
@@ -41,8 +40,8 @@ function parseJsonObjectToComponentContainers(componentContainer, componentConte
         case "ul":
             return <ul { ...componentContainer.containerAttributes } key={ getRandomKeyValue() }>{ contents ? contents : componentContents }</ul>;
         default:
-            return parseJsonObjectToComponentItem(componentContainer);
+            return componentItemParser(componentContainer);
     }
 }
 
-export default parseJsonObjectToComponentContainers;
+export default componentContainerParser;

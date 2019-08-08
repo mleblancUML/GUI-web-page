@@ -27,6 +27,8 @@ export function getJsonObjectWithID(jsonURL, ID) {
         for(var i = 0; i < json.length; i++) {
             if(json[i].componentID === ID) {
                 return json[i];
+            } else if(json[i].pageID === ID) {
+                return json[i];
             }
         }
         return json;

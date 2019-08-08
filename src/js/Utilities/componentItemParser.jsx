@@ -1,11 +1,11 @@
 import React from 'react';
 import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
 
-function parseJsonObjectToComponentItem(componentItems) {
+function componentItemParser(componentItems) {
     var contents = null;
     if(typeof(componentItems.itemContents) === "object") {
         contents = componentItems.itemContents.map((item) => {
-            return parseJsonObjectToComponentItem(item);
+            return componentItemParser(item);
         });
     }
     // checks the passed in item type to various HTML tags
@@ -52,4 +52,4 @@ function parseJsonObjectToComponentItem(componentItems) {
     }
 }
 
-export default parseJsonObjectToComponentItem;
+export default componentItemParser;

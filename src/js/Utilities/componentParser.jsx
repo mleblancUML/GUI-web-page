@@ -1,5 +1,5 @@
-import parseJsonObjectToComponentContainers from './parseJsonObjectToComponentContainers.jsx';
-import parseJsonObjectToComponentItem from './parseJsonObjectToComponentItem.jsx';
+import componentContainerParser from './componentContainerParser.jsx';
+import componentItemParser from './componentItemParser.jsx';
 
 const componentParser = function(component = null, subcomponentHandlers = null) {
     // parse the component object's containers and contents
@@ -7,7 +7,7 @@ const componentParser = function(component = null, subcomponentHandlers = null) 
         // for each outer container of the component, build the container and its inner containers and then
         // add the array of componentContents corresponding to the index of the component's container
         return componentContainers.map((container) => {
-            return parseJsonObjectToComponentContainers(container, componentContents);
+            return componentContainerParser(container, componentContents);
         });
     })(component.componentContainers, (function(componentContents, subcomponentHandlers) {
         // however before we can build the containers of the component, we must build the componentContents, check to
@@ -20,7 +20,7 @@ const componentParser = function(component = null, subcomponentHandlers = null) 
                     return subcomponentHandlers(item);
                     // for any other itemContents
                 } else {
-                    return parseJsonObjectToComponentItem(item);
+                    return componentItemParser(item);
                 }
             });
             // if componentContents is just a single object
@@ -28,7 +28,7 @@ const componentParser = function(component = null, subcomponentHandlers = null) 
             return subcomponentHandlers(componentContents);
             // for any other itemContents
         } else {
-            return parseJsonObjectToComponentItem(componentContents);
+            return componentItemParser(componentContents);
         }
     })(component.componentContents, subcomponentHandlers));
 };
