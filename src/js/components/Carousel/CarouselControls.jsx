@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import CarouselControlPrev from './CarouselControlPrev.jsx';
 import CarouselControlNext from './CarouselControlNext.jsx';
-import componentParser from '../Utilities/componentParser.jsx';
-import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getRandomKeyValue } from '../../Utilities/getRandomKeyValue.js';
 
 const CarouselControls = (props) => {
     const carouselControlsSubcomponentHandler = function(potentialSubcomponent) {

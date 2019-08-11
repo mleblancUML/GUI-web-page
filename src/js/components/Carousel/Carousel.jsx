@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import CarouselControls from './CarouselControls.jsx';
 import CarouselSlide from './CarouselSlide.jsx';
-import componentParser from '../Utilities/componentParser.jsx';
-import { getJsonObject, getJsonObjectWithID } from '../Utilities/getJsonObject.js';
-import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getJsonObject, getJsonObjectWithID } from '../../Utilities/getJsonObject.js';
+import { getRandomKeyValue } from '../../Utilities/getRandomKeyValue.js';
 
 const Carousel = (props) => {
     const carouselSubcomponentHandler = function(potentialSubcomponent) {

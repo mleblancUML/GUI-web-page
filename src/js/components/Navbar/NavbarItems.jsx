@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import componentParser from '../Utilities/componentParser.jsx';
-import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getRandomKeyValue } from '../../Utilities/getRandomKeyValue.js';
 import NavbarItem from './NavbarItem.jsx';
 
 const NavbarItems = (props) => {

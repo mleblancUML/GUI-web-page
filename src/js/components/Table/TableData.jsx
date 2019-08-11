@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import componentParser from "../Utilities/componentParser.jsx";
+import componentParser from "../../Utilities/componentParser.jsx";
 
 const TableData = (props) => {
     if(props.tableDataData) {

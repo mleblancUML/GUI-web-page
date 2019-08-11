@@ -5,8 +5,8 @@ import ReactDOM from 'react-dom';
 
 // by default, we import the App component which is a root container which
 // holds all of our other React Components
-import App from './components/App.jsx';
+import App from './components/App/App.jsx';
 
 // non-redux render
 const appWrapper = document.getElementById('App');
-appWrapper ? ReactDOM.render(<App />, appWrapper) : false;  
+appWrapper ? ReactDOM.render(<App { ...appWrapper.dataset }/>, appWrapper) : false;

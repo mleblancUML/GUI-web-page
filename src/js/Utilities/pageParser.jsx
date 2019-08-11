@@ -2,7 +2,7 @@ import React from 'react';
 
 import componentContainerParser from './componentContainerParser.jsx';
 import componentItemParser from './componentItemParser.jsx';
-import ContentSection from '../ContentSection/ContentSection.jsx';
+import ContentSection from '../src/ContentSection/ContentSection.jsx';
 import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
 
 const pageParser = function(pageConfigurations = null) {

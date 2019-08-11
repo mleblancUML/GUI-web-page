@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getJsonObject, getJsonObjectWithID } from '../Utilities/getJsonObject.js';
-import { getRandomKeyValue } from '../Utilities/getRandomKeyValue.js';
+import { getJsonObject, getJsonObjectWithID } from '../../Utilities/getJsonObject.js';
+import { getRandomKeyValue } from '../../Utilities/getRandomKeyValue.js';
 import NavbarBrand from './NavbarBrand.jsx';
 import NavbarCollapse from './NavbarCollapse.jsx';
 import NavbarToggler from './NavbarToggler.jsx';
-import componentParser from '../Utilities/componentParser.jsx';
+import componentParser from '../../Utilities/componentParser.jsx';
 
 const Navbar = (props) => {
     const navbarSubcomponentHandler = function(potentialSubcomponent) {

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import componentParser from '../Utilities/componentParser.jsx';
-import { getJsonObject, getJsonObjectWithID } from '../Utilities/getJsonObject.js';
-import parseJsonObjectToComponentItem from '../Utilities/parseJsonObjectToComponentItem.jsx';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getJsonObject, getJsonObjectWithID } from '../../Utilities/getJsonObject.js';
+import parseJsonObjectToComponentItem from '../../Utilities/parseJsonObjectToComponentItem.jsx';
 
 const ContentColumn = (props) => {
     const contentColumnSubcomponentHandler = function(potentialSubcomponent) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getJsonObjectWithID } from '../Utilities/getJsonObject.js';
-import componentParser from '../Utilities/componentParser.jsx';
+import { getJsonObjectWithID } from '../../Utilities/getJsonObject.js';
+import componentParser from '../../Utilities/componentParser.jsx';
 import Card from '../Card/Card.jsx';
 import Carousel from '../Carousel/Carousel.jsx';
 import Footer from '../Footer/Footer.jsx';

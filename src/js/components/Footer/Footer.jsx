@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import componentParser from '../Utilities/componentParser.jsx';
-import { getJsonObject, getJsonObjectWithID } from '../Utilities/getJsonObject.js';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getJsonObject, getJsonObjectWithID } from '../../Utilities/getJsonObject.js';
 
 const Footer = (props) => {
     if(props.footerData) {

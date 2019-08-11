@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import componentParser from '../Utilities/componentParser.jsx';
-import { getJsonObjectWithID, getJsonObject } from '../Utilities/getJsonObject.js';
+import componentParser from '../../Utilities/componentParser.jsx';
+import { getJsonObjectWithID, getJsonObject } from '../../Utilities/getJsonObject.js';
 
 const Jumbotron = (props) => {
     if(props.jumbotronData) {
