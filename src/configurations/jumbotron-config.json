@@ -40,8 +40,8 @@
                 "itemType": "a",
                 "itemAttributes": {
                     "style": {
-                        "border-color": "white",
-                        "border-style": "solid",
+                        "borderColor": "white",
+                        "borderStyle": "solid",
                         "backgroundColor": "#888888",
                         "padding": "0.5%",
                         "color": "white"
