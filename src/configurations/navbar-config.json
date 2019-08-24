@@ -97,7 +97,7 @@
                                     {
                                         "containerType": "li",
                                         "containerAttributes": {
-                                            "className": "nav-item dropdown"
+                                            "className": "nav-item active dropdown"
                                         }
                                     }
                                 ],
