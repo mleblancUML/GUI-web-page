@@ -97,7 +97,7 @@
                                     {
                                         "containerType": "li",
                                         "containerAttributes": {
-                                            "className": "nav-item active dropdown"
+                                            "className": "nav-item dropdown"
                                         }
                                     }
                                 ],
@@ -137,7 +137,7 @@
                                                     "className": "dropdown-item",
                                                     "href": "../../Assignment3/index.html"
                                                 },
-                                                "itemContent": "Assignment 3"
+                                                "itemContents": "Assignment 3"
                                             },
                                             {
                                                 "itemType": "a",
@@ -146,7 +146,7 @@
                                                     "color": "white",
                                                     "href": "../../Assignment6/index.html"
                                                 },
-                                                "itemContent": "Assignment 6"
+                                                "itemContents": "Assignment 6"
                                             },
                                             {
                                                 "itemType": "a",
@@ -155,7 +155,7 @@
                                                     "color": "white",
                                                     "href": "../../Assignment7/index.html"
                                                 },
-                                                "itemContent": "Assignment 7"
+                                                "itemContents": "Assignment 7"
                                             }, 
                                             {
                                                 "itemType": "a",
@@ -164,7 +164,7 @@
                                                     "color": "white",
                                                     "href": "../../Assignment8/index.html"
                                                 },
-                                                "itemContent": "Assignment 8"
+                                                "itemContents": "Assignment 8"
                                             },
                                             {
                                                 "itemType": "a",
@@ -173,7 +173,7 @@
                                                     "color": "white",
                                                     "href": "../../Assignment9/index.html"
                                                 },
-                                                "itemContent": "Assignment 9"
+                                                "itemContents": "Assignment 9"
                                             }
                                         ]
                                     }
