@@ -1,0 +1,55 @@
+[
+    {
+        "componentID": "MainPageJumbotron",
+        "componentContainers": [
+            {
+                "containerType": "div",
+                "containerAttributes": {
+                    "className": "jumbotron container",
+                    "style": {
+                        "backgroundRepeat": "no-repeat", 
+                        "backgroundPosition": "right",
+                        "color": "white",
+                        "backgroundColor": "#888888",
+                        "marginTop": "1%",
+                        "opacity": "0.9",
+                        "textAlign": "center"
+                    }
+                }      
+            }
+        ],
+        "componentContents": [
+            {
+                "itemType": "h1",
+                "itemContents": "Welcome"
+            },
+            {
+                "itemType": "p",
+                "itemContents": [
+                    "I am a computer scientist from the University of Massachusetts Lowell with a minor in mathematics. I was raised in Milford Massachusetts and I enjoy cooking and playing video games in my spare time. I cook many different styles of food, but I am still learning. I am currently improving my react skills by working on side projects like creating a template nav bar using just react.",
+                    {
+                        "itemType": "br"
+                    },
+                    {
+                        "itemType": "br"
+                    },
+                    "I am actively looking for a position as a front-end web developer in the Boston area. My resume is linked below."
+                ]
+            },
+            {
+                "itemType": "a",
+                "itemAttributes": {
+                    "style": {
+                        "borderColor": "white",
+                        "borderStyle": "solid",
+                        "backgroundColor": "#888888",
+                        "padding": "0.5%",
+                        "color": "white"
+                    },
+                    "href": "../../assets/LeBlancResume2019 (1).pdf"
+                },
+                "itemContents": "Resume"
+            }
+        ]
+    }
+]

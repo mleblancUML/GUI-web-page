@@ -1,0 +1,77 @@
+[
+    {
+        "componentID": "MainPageFooter",
+        "componentType": "Footer",
+        "componentContainers": [
+            {
+                "containerType": "footer",
+                "containerAttributes": {
+                    "style": {
+                        "padding": "1%",
+                        "width": "100%"
+                    }
+                },
+                "containerContents": [
+                    {
+                        "containerType": "div",
+                        "containerAttributes": {
+                            "class-name": "contact-info",
+                            "style": {
+                                "backgroundColor": "#222222",
+                                "color": "white",
+                                "bottom": "0",
+                                "display": "contents",
+                                "position": "fixed",
+                                "width": "100%"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "componentContents": [
+            {
+                "itemType": "p",
+                "itemContents": [
+                    "Email: ",
+                    {
+                        "itemType": "span",
+                        "itemContents": [
+                            {
+                                "itemType": "a",
+                                "itemAttributes": {
+                                    "style": {
+                                        "color": "white"
+                                    },
+                                    "href": "mailto:matthewmleblanc@gmail.com"
+                                },
+                                "itemContents": "matthewmleblanc@gmail.com"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "itemType": "p",
+                "itemContents": [
+                    "Github: ",
+                    {
+                        "itemType": "span",
+                        "itemContents": [
+                            {
+                                "itemType": "a",
+                                "itemAttributes": {
+                                    "style": {
+                                        "color": "white"
+                                    },
+                                    "href": "https://github.com/mleblancUML"
+                                },
+                                "itemContents": "Click Here!"
+                            }
+                        ]
+                    }
+                ]   
+            }
+        ]
+    }
+]

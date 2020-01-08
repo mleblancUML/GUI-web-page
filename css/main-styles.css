@@ -1,7 +1,13 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 body{
-    background-image: url("../images/20181102_105955.jpg");
+    background-image: url("../assets/Backgrounds/20181102_105955.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 /* CSS FOR HEADDING AND NAV-BAR */
